@@ -1,2 +1,2 @@
-# react-basic
-react basic tutorial
+# React Basic
+React Basic Tutorial
