@@ -19,6 +19,10 @@ class MyComponent extends React.Component {
         });
     }
 
+    handleClickButton = () => {
+        alert('click me');
+    }
+
     render() {
         return (
             <>
@@ -31,6 +35,10 @@ class MyComponent extends React.Component {
 
                 <div className="second">
                     My youtube channel: {this.state.channel}
+                </div>
+
+                <div className="third">
+                    <button onClick={() => this.handleClickButton()}>Click me</button>
                 </div>
             </>
         );
