@@ -2,7 +2,7 @@ import React from "react";
 
 class MyComponent extends React.Component {
 
-    stage = {
+    state = {
         name: 'Lalisa',
         channel: 'Selina Vlog',
     };
@@ -20,20 +20,17 @@ class MyComponent extends React.Component {
     }
 
     render() {
-        let name = 'Selina';
-
         return (
             <>
                 <div className="first">
-                    {console.log('My name is ', name)}
-                    <input value={this.stage.name} type="text"
+                    <input value={this.state.name} type="text"
                         onChange={(event) => this.handleOnChangeName(event)}
                     />
-                    My name is {this.stage['name']}
+                    My name is {this.state['name']}
                 </div>
 
                 <div className="second">
-                    My youtube channel: {this.stage.channel}
+                    My youtube channel: {this.state.channel}
                 </div>
             </>
         );
